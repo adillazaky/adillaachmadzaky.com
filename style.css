@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 2em;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2{
+	background-color: #F4E869;
+	color: #5F8670;
+}
+
+header {
+  padding: 10px;
+  background-color: lightblue;
+}
+
+a {
+	color: #38419D
+}
+
+main {
+  display: flex;
+}
+
+
+footer img {
+  display: block; /* Memastikan gambar berada di dalam blok */
+  margin: 0 auto; /* Mengatur gambar agar berada di tengah secara horizontal */
+}
+footer {
+  text-align: center;
+	background-color: #F4E869;
+	color: #3085C3;
+	padding: 18px;
+}
+
+aside{
+	background-color: #FAEED1;
+	color: #38419D;
+	padding: 20px;
+}
+img {
+  max-width: 100%;
+  height: auto; 
+}
+
+.sidebar{
+  flex: 1; 
+  padding: 20px;
+  margin: 0;
+}
+
+ .content{
+ 	padding: 20px;
+ 	flex: 2;
+ }
+.mahal {
+	border: 10px solid #3085C3;
+	border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    flex-direction: column; 
+  }
+  
+  .sidebar, .content {
+    flex: auto; 
+    margin-bottom: 20px;
+  }
+}
